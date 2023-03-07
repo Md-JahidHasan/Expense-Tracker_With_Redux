@@ -1,21 +1,25 @@
 import React from 'react';
+import editImg from '../../assets/images/edit.svg';
+import deleteImg from '../../assets/images/delete.svg';
 
-const Transaction = () => {
+const Transaction = ({transaction}) => {
     return (
-        <li className="transaction income">
-            <p>Earned this month</p>
+        <li className={`transaction ${transaction.type}`}>
+            <p>{transaction.name}</p>
             <div className="right">
-                <p>৳ 100</p>
+                <p>৳ {transaction?.amount}</p>
                 <button className="link">
                     <img
                         className="icon"
-                        src="../../assets/images/edit.svg"
+                        src={editImg}
+                        alt=''
                     />
                 </button>
                 <button className="link">
                     <img
                         className="icon"
-                        src="../../assets/images/delete.svg"
+                        src={deleteImg}
+                        alt=''
                     />
                 </button>
             </div>

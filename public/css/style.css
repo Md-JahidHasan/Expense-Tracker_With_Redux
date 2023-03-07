@@ -107,6 +107,15 @@ label {
     gap: 5px;
 }
 
+.error{
+    background-color: #c20524;
+    padding: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+    margin: 10px;
+    font-weight: bold;
+}
+
 .transaction {
     margin: 10px 0;
     color: white;
